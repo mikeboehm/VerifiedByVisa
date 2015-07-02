@@ -1,5 +1,6 @@
 #!/usr/bin/python
 import sys
+import getpass
 
 input_args = sys.argv[1:]
 
@@ -16,7 +17,7 @@ else:
 		input.append(int(user_input))
 		char_count += 1
 
-password_input = raw_input("Enter password: ")
+password_input = getpass.getpass()
 
 output = []
 for position in input:
